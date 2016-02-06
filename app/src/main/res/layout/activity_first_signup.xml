@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_sigunup_activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ipragmatech.socialengineapi.activity.FirstSignupActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/FrameCellStyle"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/FrameCellStyle"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/signup_detail"
+                style="@style/BriefDetailTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_first" />
+
+            <!--<TextView
+                android:id="@+id/signup_term_condition"
+                style="@style/LinkStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:padding="20dp"
+                android:text="@string/terms_condition" />
+    -->
+
+            <LinearLayout
+                android:id="@+id/phone_layout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/signup_detail"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/signup_txt_plus"
+                    style="@style/BriefDetailTitleStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/signup_txt_code"
+                    style="@style/SignupTextFieldStyle"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/country_code"
+                    android:inputType="number"
+                    android:gravity="center"
+                    app:baseColor="@color/textFieldPrimaryColor"
+                    app:primaryColor="@color/textFieldPrimaryColor"
+                    app:errorColor="@color/textFieldLightErrorColor"
+                    />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/signup_txt_number"
+                    style="@style/SignupTextFieldStyle"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/phone_no"
+                    android:inputType="number"
+                    app:baseColor="@color/textFieldPrimaryColor"
+                    app:primaryColor="@color/textFieldPrimaryColor"
+                    app:errorColor="@color/textFieldLightErrorColor"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/phone_layout"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/signup_term_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_condition"
+                    android:paddingTop="5dp"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_next"
+                style="@style/DarkRoundButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/signin_next"
+                android:layout_below="@+id/phone_layout"
+                />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

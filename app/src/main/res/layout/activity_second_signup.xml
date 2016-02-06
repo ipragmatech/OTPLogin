@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sec_signup_activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/FrameCellStyle"
+        android:fillViewport="false" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/signup_detail"
+                style="@style/BriefDetailTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_second"
+                android:gravity="center" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_txt_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/code"
+                android:gravity="center"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/signup_done_btn_mobile"
+                style="@style/DarkRoundButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="@string/done"
+                />
+
+
+            <TextView
+                android:id="@+id/signup_detail_resend_mobile"
+                style="@style/BriefDetailTitleStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup_otp_resend_mobile"
+                android:gravity="center" />
+
+
+            <Button
+                android:id="@+id/signup_resend_btn_mobile"
+                style="@style/DarkRoundButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="@string/resend_otp_mobile"
+                />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
